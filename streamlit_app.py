@@ -26,7 +26,7 @@ if uploaded_file is not None:
     opencv_image = st.session_state.uploaded_image
     
     # Display original image
-    st.image(opencv_image, channels="BGR", caption="Uploaded MRI Scan", use_column_width=True)
+    st.image(opencv_image, channels="BGR", caption="Uploaded MRI Scan", use_container_width=True)
     
     if st.button("Analyze Scan"):
         # Perform tumor detection
