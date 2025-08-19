@@ -54,10 +54,10 @@ if uploaded_file is not None:
         col1, col2 = st.columns(2)
         with col1:
             st.image(opencv_image, channels="BGR", 
-                    caption="Original Scan", use_column_width=True)
+                    caption="Original Scan", use_container_width=True)
         with col2:
             st.image(annotated_image_rgb, 
-                    caption="Detected Tumor Regions", use_column_width=True)
+                    caption="Detected Tumor Regions", use_container_width=True)
         
         # Show detection summary
         if len(detections) > 0:
